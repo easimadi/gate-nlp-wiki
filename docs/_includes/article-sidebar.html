@@ -1,0 +1,36 @@
+<div class="col-12 col-md-3">
+  <aside class="px-1 py-2 px-md-2 rounded-2 border mb-4 mb-md-0">
+    <nav>
+      <ul class="list-style-none">
+
+        {% assign page_root = page.path | remove_first: "_articles/" | remove_first: ".md" | split: "/" %}
+
+        {% for article in site.articles %}
+          {% assign article_root = article.path | remove_first: "_articles/" | remove_first: ".html" | split: "/" %}
+
+          {% if article_root[0] == page_root[0]  %}
+            <li>
+              <a href="{{ article.url }}" class="filter-item ws-normal px-3  py-2 {% if 
+              article.url == page.url  %} selected {% endif %}">{{ article.title }}</a>
+            </li>
+          {% endif %}
+
+          <!-- This is  add parrent link -->
+          {% assign parent_root = article.path | remove_first: "_articles/" | remove_first: ".md" | split: "/" %}
+
+            {% if parent_root[1] %}
+                {% continue %}
+            {% endif %}
+
+          {% if page_root[0] == parent_root[0] %}
+            <li>
+              <a href="{{ article.url }}" class="filter-item ws-normal px-3  py-2 {% if  article.url == page.url %} selected {% endif %}">{{ article.title }}</a>
+            </li>
+          {% endif %}
+
+        {% endfor %}
+        
+        </ul>
+    </nav>
+  </aside>
+</div>

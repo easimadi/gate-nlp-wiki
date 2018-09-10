@@ -1,0 +1,63 @@
+---
+title:  On Demand Training 
+tagline: You’re in control. We’re with you along the way. 
+layout: home
+parmalink: /
+---
+
+
+      <div class="my-6 p-2">
+        <div class="container-lg">
+          <ul class="timeline">  
+
+            {% assign timelineInverted = false  %}
+
+            {% assign category = "" %}
+
+            {% for article in site.articles %}
+            {% assign category = article.path | remove_first: "_articles/" | remove_first: "/index.html" | split: "/" %}
+
+            {% if category[1] %}
+                {% continue %}
+            {% endif %}
+
+                   
+            <li {% if timelineInverted %} class="timeline-inverted"{% endif %} >
+              <div>
+                <a href="{{ article.url }}" class="timeline-image-link">
+                  <img class="timeline-image" src="{{ article.image | prepend:'/images/' }}" alt="{{ article.title }} Topic Image">
+              </a>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <a href="{{ article.url }}">
+                    <h2>{{ article.title }}</h2>
+                  </a>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted"></p>
+                  <p>{{ article.description }}</p>
+                </div>
+              </div>
+            </li>
+
+            {% if timelineInverted %}
+                {% assign timelineInverted = false %}
+              {% else %}
+                 {% assign timelineInverted = true %}
+            {% endif %}
+
+
+            {% endfor %}
+            {% assign category = nill %}
+
+            <li>
+              <div>
+                <img class="timeline-image" src="{{ site.default_tagline_image | prepend:'/images/' | relative_url }}" alt="{{ site.default_tagline_image_alt }}">
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>

@@ -1,0 +1,66 @@
+---
+parmalink: /:title/
+layout: default
+---
+
+
+  <div id="main" role="main">
+    <div class="bg-blue-dark text-white py-2 py-md-4">
+      <div class="container-lg p-responsive my-4 text-center">
+        <h1 itemprop="headline" class="alt-h1"> {{ page.title }}</h1>
+<!--         <p class="float-right">
+          <a href="es/index.html" role="button" class="btn btn-sm btn-outline es">español</a>
+        </p> -->
+      </div>
+    </div>
+    <div class="container-lg mx-auto">
+      <div class="d-flex flex-items-start flex-wrap gutter-md py-6 p-responsive">
+        {% include article-sidebar.html %}
+
+        <article class="page col-12 col-md-9" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="headline" content="{{ page.title }}">
+          <section class="page__content" itemprop="text">
+            <div class="mb-6 markdown-body">  
+              {{ content }}
+            </div>
+
+
+
+{% if page.show_me_how %}
+<details class="flash mb-2">
+  <summary>Show me how</summary>
+  <hr class="border-blue-light">
+    <iframe src="{{ page.show_me_how.youtube }}" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+    <div>
+      {{ page.show_me_how.description }}
+    </div>
+</details>
+{% endif %}
+
+
+{% if page.tell_me_why %}
+<details class="flash mb-2 flash-warn">
+  <summary>Tell me why</summary> <hr class="border-yellow">
+   <h2 id="what-is-github">What is GitHub?</h2>
+  <iframe src="{{ page.tell_me_why.youtube }}" allowfullscreen="" width="560" height="315" frameborder="0"></iframe>
+<div>
+  {{ page.tell_me_why.description }}
+</div>   
+</details>
+{% endif %}
+
+
+{% if page.next.ur  %}
+<a href="{{  page.next.ur }}" class="btn">Continue</a>
+{% endif %}
+
+
+          </section>
+          
+            <footer class="page__meta">
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </div>

@@ -1,1 +1,161 @@
-theme: jekyll-theme-leap-day
+# Where things are
+# source              : ./source
+# collections_dir     : ./source
+# Sera - OnePage Jekyll Template
+# Configuration File
+#
+
+# Information for compile
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "articles"]
+
+#
+# If your website is placed in a separate folder on your server please modify
+# this with your folder name, by default is empty.
+# Example: Sera Demo is hosted on projects.gleesik.ro/sera-onepage
+# If I compile Sera Template and I put in /sera-onepage without modibfing baseurl
+# than scripts can't be loaded corectly.
+# For this example my site url is: projects.gleesik.ro (This can be just www.example.com)
+# My folder for Demo Website is: /sera-onepage so baseurl: /sera-onepage
+#
+baseurl: ""
+
+# the base hostname & protocol for your site
+url: "http://localhost:3000"
+
+####################################
+######   Optional Features    ######
+####################################
+smooth-scroll: false
+# Build settings
+markdown: kramdown
+
+#######################################################
+#######################################################
+###############   HEADER INFORMATIONS   ###############
+#######################################################
+#######################################################
+
+#This is your site name 
+
+name: Emml Asimadi
+
+# This is your site title
+title: Emml Asimadi title
+# Website language
+lang: en-US
+
+#
+# This is your email adress, contact from send here all emails from contact section
+# IMPORTANT: you can modify contact form from this static template, but now works contact form works with a free external server
+# To configure this contact form, first please send a fictive email afeter you enter below your email and verify that :)
+#
+email: your_email@example.com
+logo: 'assets/logo.png'
+
+
+#########################
+######      seo      ####
+#########################
+# Twitter Card
+twitter:
+  username: 
+  card: 
+
+# Twitter Card
+facebook:
+  app_id: 
+  publisher: 
+  admins: 
+
+# Social Link
+social:
+  name: 
+  links:
+#    - https://twitter.com/BenBalter
+
+#########################
+######   webmaster   ####
+#########################
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234
+
+###########################
+##   timeline-image  ######
+###########################
+default_tagline_image: welcometocat.png
+default_tagline_image_alt: default Tagline Topic Image
+
+###########################
+######   contract_page  ########
+###########################
+contract_page_heading: Ready to talk?
+contract_page_tagline: ''
+contract_page_title: Contact Professional Services
+contract_page_address: "<strong>Address : </strong><br> Box 564, Disneyland<br> USA"
+
+
+
+
+#########################
+######   plugins   ######
+#########################
+plugins:
+- jekyll-avatar
+- jekyll-feed
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-seo-tag
+- jekyll-sitemap
+- jemoji
+
+
+####################################
+######  Global Social Links   ######
+####################################
+youtube: '#'
+pinterest: '#'
+facebook: '#'
+twitter: '#'
+google-plus: '#'
+vimeo: '#'
+
+
+# Google Map JS api
+# This is my api for this template
+key-api: AIzaSyDbnxVZQannH0GF4gtnnBFPiP9ofm2WqGs
+map-text: Sera Google Map
+map-text-location: Bucharest, Romania
+map-lat: 44.4267674
+map-lng: 26.102538399999958
+
+####################################################
+#####   sass compile for local mation           ####
+####################################################
+# sass:
+#   # Where you keep your scss files
+#   sass_dir: assets/css/
+#   # Where sass should look for other scss
+#   load_paths:
+#     - node_modules/
+
+#########################
+#####   collections  ####
+#########################
+collections:
+  articles:
+    output: true
+##    parmalink: /articles/:name/#
+#
+
+defaults:
+  - scope:
+      collection: 'articles'
+#      path: '_articles'
+      type: 'articles'
+    values:
+      layout: 'article'
+      
