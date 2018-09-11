@@ -25,7 +25,7 @@ parmalink: /
             <li {% if timelineInverted %} class="timeline-inverted"{% endif %} >
               <div>
                 <a href="{{ article.url }}" class="timeline-image-link">
-                  <img class="timeline-image" src="{{ article.image | prepend:'/images/' }}" alt="{{ article.title }} Topic Image">
+                  <img class="timeline-image" src="{{ article.image | prepend:'/images/' | relative_url  }}" alt="{{ article.title }} Topic Image">
               </a>
               </div>
               <div class="timeline-panel">
