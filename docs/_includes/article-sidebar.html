@@ -10,7 +10,7 @@
 
           {% if article_root[0] == page_root[0]  %}
             <li>
-              <a href="{{ article.url }}" class="filter-item ws-normal px-3  py-2 {% if 
+              <a href="{{ article.url | relative_url }}" class="filter-item ws-normal px-3  py-2 {% if 
               article.url == page.url  %} selected {% endif %}">{{ article.title }}</a>
             </li>
           {% endif %}
@@ -24,7 +24,7 @@
 
           {% if page_root[0] == parent_root[0] %}
             <li>
-              <a href="{{ article.url }}" class="filter-item ws-normal px-3  py-2 {% if  article.url == page.url %} selected {% endif %}">{{ article.title }}</a>
+              <a href="{{ article.url | relative_url }}" class="filter-item ws-normal px-3  py-2 {% if  article.url == page.url %} selected {% endif %}">{{ article.title }}</a>
             </li>
           {% endif %}
 
