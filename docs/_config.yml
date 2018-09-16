@@ -58,7 +58,7 @@ logo: 'assets/logo.png'
 #########################
 # Twitter Card
 twitter:
-  username: 
+  username:
   card: 
 
 # Twitter Card
@@ -119,7 +119,7 @@ plugins:
 youtube: '#'
 pinterest: '#'
 facebook: '#'
-twitter: '#'
+twitter: 'emmlasimadi'
 google-plus: '#'
 vimeo: '#'
 
