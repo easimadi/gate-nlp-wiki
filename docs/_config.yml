@@ -49,7 +49,7 @@ lang: en-US
 # IMPORTANT: you can modify contact form from this static template, but now works contact form works with a free external server
 # To configure this contact form, first please send a fictive email afeter you enter below your email and verify that :)
 #
-email: your_email@example.com
+email: info@datanix.co.uk
 logo: 'assets/logo.png'
 
 
@@ -92,10 +92,10 @@ default_tagline_image_alt: default Tagline Topic Image
 ###########################
 ######   contract_page  ########
 ###########################
-contract_page_heading: Ready to talk?
+contract_page_heading: Contact Us
 contract_page_tagline: ''
-contract_page_title: Contact Professional Services
-contract_page_address: "<strong>Address : </strong><br> Box 564, Disneyland<br> USA"
+contract_page_title: Contact for Support
+#contract_page_address: "<strong>Address : </strong><br> Box 564, Disneyland<br> USA"
 
 
 
