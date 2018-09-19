@@ -20,12 +20,25 @@ To illustrate these we load the GATE-NLP home page (`Document_url = https://gate
 So the source document it the html page with all the markups at the above url.
 
 
-### Get document content.
+### API Signature.
 ```java
-//signature
+//get document content
 public DocumentContent getContent();
+
+// get the Default Annotation set
+public AnnotationSet getAnnotations();  
+
+// get a named Annotation set
+public AnnotationSet getAnnotations(String name);  
+
+// get all named Annotation sets
+public Map<String, AnnotationSet> getNamedAnnotationSets();
+
+// Get the names of the annotation sets
+public Set<String> getAnnotationSetNames();
+
 ```
-Example
+**Example 1: Get document content**
 ```java
 //assumes Document `doc` has been created.
 DocumentContent content = doc.getContent()
@@ -35,19 +48,9 @@ System.out.println(content)
 Output
 [Image Docment Content]
 
-### Get the Annotation set.
-```java 
-//signatures
-// get the Default Annotation set
-public AnnotationSet getAnnotations();  
 
-// get a named Annotation set
-public AnnotationSet getAnnotations(String name);  
+**Example 2: Get the Annotation set**
 
-// get all named Annotation sets
-public Map<String, AnnotationSet> getNamedAnnotationSets();  
-
-```
 
 Example, since this document has no default annotation set lets use the apportunity to get "Original markups". which is the HTML tags of the input document.
 ```java
@@ -67,9 +70,4 @@ Output
 ```
 
 
-### Get the names of the annotation sets
-```java
-//signature
-public Set<String> getAnnotationSetNames();
 
-```
