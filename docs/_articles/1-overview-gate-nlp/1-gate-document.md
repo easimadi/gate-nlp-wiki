@@ -16,6 +16,9 @@ The GATE `Document` is the document or body of text to be annotated. A collectio
 
 ### API Signature.
 ```java
+// Get the name of the Document
+public String getName();
+
 //get document content
 public DocumentContent getContent();
 
