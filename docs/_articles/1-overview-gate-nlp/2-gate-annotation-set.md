@@ -6,7 +6,10 @@ title: Gate Annotation Set
 we talk of `annotation` in the next page - they are markups of the document implemented as an object with annotation `type`, 
 `start` and `end offsets` and `features`.
 
+# Annotation Set
 - Annotation sets can be managed (create, delete, modified...) by the `Document` they belong to.
+
+
 
 **PrintOut of an AnnotationSet**
 ```
