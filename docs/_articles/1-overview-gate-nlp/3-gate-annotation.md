@@ -1,3 +1,7 @@
+---
+title: Gate Annotation
+---
+
 Annotions are the markups on segements of the DocumentContent.
 
 Printout of an Annotation.
