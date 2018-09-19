@@ -5,12 +5,12 @@ title: Gate Document
 
 The GATE `Document` is the document or body of text to be annotated. A collections of documents make a `Corpus`
 
-## A GATE Document consist of 
+# A GATE Document consist of 
 * a DocumentContent object
 * a Default annotation set (which bears no name)
 * zero or more named annotation sets.
 
-## Because a Document is also a Resource, it also has
+### Because a Document is also a Resource, it also has
 * a name
 * features  
 
@@ -38,7 +38,7 @@ public Set<String> getAnnotationSetNames();
 
 ------
 
-## Illustration
+# Illustration
 To illustrate these we load the GATE-NLP home page (`Document_url = https://gate.ac.uk/index.html`) as `Document`.
 So the source document it the html page with all the markups at the above url.
 
