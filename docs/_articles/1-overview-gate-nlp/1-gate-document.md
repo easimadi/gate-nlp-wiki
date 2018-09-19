@@ -58,7 +58,9 @@ AnnotationSet originalMarkupSet = doc.getAnnotations("Original markups")
 System.out.println(originalMarkupSet)
 ```
 Output
-```[AnnotationImpl: id=0; type=html; features={lang=en}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=1; offset=2914
+
+ <div class="mt-6 p-5 bg-white rounded-2 box-shadow-extra-large border">
+'[AnnotationImpl: id=0; type=html; features={lang=en}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=1; offset=2914
 , AnnotationImpl: id=1; type=head; features={}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=2; offset=25
 , AnnotationImpl: id=2; type=meta; features={http-equiv=Content-Type, content=text/html; charset=UTF-8}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=0; offset=0
 , AnnotationImpl: id=3; type=title; features={}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=3; offset=23
@@ -67,6 +69,9 @@ Output
 , AnnotationImpl: id=6; type=script; features={type=text/javascript, src=./gate-sample-doc_files/gate.cow.gwt.NewPage.nocache.js, isEmptyAndSpan=true}; start=NodeImpl: id=2; offset=25;
 ......
 ]
+
+      </div>
+```
 ```
 
 
