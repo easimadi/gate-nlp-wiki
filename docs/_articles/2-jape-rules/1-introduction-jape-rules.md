@@ -18,11 +18,11 @@ Options: control = appelt
 
 Rule: Example1
 (
-// LHS code goes here
+    // LHS code goes here
 ):label
 -->
 {
-// RHS code goes here and it could be JAVA
+    // RHS code goes here and it could be JAVA
 }
 
 
