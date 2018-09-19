@@ -12,3 +12,5 @@ In this Series we will explore GATE-NLP Data Model and its usage in Common JAPE 
 - Document
 - Annotation
 - FeatureMap
+
+For More examples and Patterns see GATE-NLP **[official site](https://gate.ac.uk/wiki/jape-repository/)**.
