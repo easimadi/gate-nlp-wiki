@@ -17,7 +17,7 @@ Annotation consist of:
 
 
 ## API Signature
-```
+```java
 public String getType();
 public Node getStartNode();
 public Node getEndNode();
