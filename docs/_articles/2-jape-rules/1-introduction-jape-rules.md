@@ -7,7 +7,7 @@ date:   2018-09-16 18:35:00 +0100
 
 
 # Introduction to JAPE Rules
-Components on JAPE.
+Components on JAPE. With JAPE you define Patterns on LHS and define behaviour when the patterns are matched on the RHS.
 
 ```java
 Imports: { import static gate.Utils.*; }
