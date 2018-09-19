@@ -14,12 +14,6 @@ The GATE `Document` is the document or body of text to be annotated. A collectio
 * a name
 * features  
 
-
-## Illustration
-To illustrate these we load the GATE-NLP home page (`Document_url = https://gate.ac.uk/index.html`) as `Document`.
-So the source document it the html page with all the markups at the above url.
-
-
 ### API Signature.
 ```java
 //get document content
@@ -38,6 +32,13 @@ public Map<String, AnnotationSet> getNamedAnnotationSets();
 public Set<String> getAnnotationSetNames();
 
 ```
+
+------
+
+## Illustration
+To illustrate these we load the GATE-NLP home page (`Document_url = https://gate.ac.uk/index.html`) as `Document`.
+So the source document it the html page with all the markups at the above url.
+
 **Example 1: Get document content**
 ```java
 //assumes Document `doc` has been created.
