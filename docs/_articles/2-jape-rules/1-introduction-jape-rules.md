@@ -7,8 +7,22 @@ date:   2018-09-16 18:35:00 +0100
 
 
 # Introduction to JAPE Rules
-In this section we establish a quick overview of components on JAPE.
+Components on JAPE.
 
-# Components Of JAPE Rules
-# LHS
-# RHS
+```java
+Imports: { import static gate.Utils.*; }
+
+Phase: Example
+Input: Token // and any other input annotation types
+Options: control = appelt
+
+Rule: Example1
+(
+// LHS code goes here
+):label
+-->
+{
+// RHS code goes here and it could be JAVA
+}
+
+
