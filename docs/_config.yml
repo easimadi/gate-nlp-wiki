@@ -11,11 +11,9 @@ exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md",
 #
 # If your website is placed in a separate folder on your server please modify
 # this with your folder name, by default is empty.
-# Example: Sera Demo is hosted on projects.gleesik.ro/sera-onepage
+# Example: Sera Demo is hosted on gohugo.us
 # If I compile Sera Template and I put in /sera-onepage without modibfing baseurl
 # than scripts can't be loaded corectly.
-# For this example my site url is: projects.gleesik.ro (This can be just www.example.com)
-# My folder for Demo Website is: /sera-onepage so baseurl: /sera-onepage
 #
 baseurl: "gate-nlp-wiki"
 
@@ -135,12 +133,9 @@ map-lng: 26.102538399999958
 ####################################################
 #####   sass compile for local mation           ####
 ####################################################
-# sass:
-#   # Where you keep your scss files
-#   sass_dir: assets/css/
-#   # Where sass should look for other scss
-#   load_paths:
-#     - node_modules/
+sass:
+    sass_dir: _sass
+    style: compressed
 
 #########################
 #####   collections  ####
