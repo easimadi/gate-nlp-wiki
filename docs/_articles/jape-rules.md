@@ -3,7 +3,7 @@ title:  JAPE Rules & Common Patterns
 image: "atom.png"
 description: "Understanding Jape Rules & Common Patterns"
 parmalink: /:path/
-date: 2018-09-20 17:36:00 +0100
+date: 2018-09-20 17:25:00 +0100
 ---
 
 
