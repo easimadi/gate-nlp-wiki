@@ -1,6 +1,6 @@
 ---
 title: Get the String of the Annotation
-Date: 2018-10-04 10:00:00 +0100
+Date: 2018-09-20 17:34:00 +0100
 parmalink: /:path/
 ---
 
