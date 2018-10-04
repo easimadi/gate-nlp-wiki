@@ -67,7 +67,7 @@ System.out.println(originalMarkupSet)
 Output
 
 ```
-'[AnnotationImpl: id=0; type=html; features={lang=en}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=1; offset=2914
+[AnnotationImpl: id=0; type=html; features={lang=en}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=1; offset=2914
 , AnnotationImpl: id=1; type=head; features={}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=2; offset=25
 , AnnotationImpl: id=2; type=meta; features={http-equiv=Content-Type, content=text/html; charset=UTF-8}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=0; offset=0
 , AnnotationImpl: id=3; type=title; features={}; start=NodeImpl: id=0; offset=0; end=NodeImpl: id=3; offset=23
