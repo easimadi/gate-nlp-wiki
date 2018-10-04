@@ -23,7 +23,7 @@ we talk of `annotation` in the next page - they are markups of the document impl
 ```
 
 ## API Signature
-#### Access Nodes in the set
+### Access Nodes in the set
 
 ```java
 // Get the node with the smallest offset.
@@ -32,7 +32,7 @@ public Node firstNode();
 public Node lastNode();
 ```
 
-#### New Annotations
+### New Annotations
 ```java
 // Create (and add) a new annotation
 public Integer add(Long startOffset, Long endOffset, String type, FeatureMap features);
@@ -40,7 +40,7 @@ public Integer add(Long startOffset, Long endOffset, String type, FeatureMap fea
 public Integer add(Node start, Node end, String type, FeatureMap features);
 ```
 
-#### Getting Annotations by offsets
+### Getting Annotations by offsets
 ```java
 //Get annotations starting from
 public AnnotationSet get(Long offset);
@@ -68,7 +68,7 @@ public AnnotationSet get(String type, Long startOffset, Long endOffset);
 public AnnotationSet get(String type, Set featureNames);
 ```
 
-#### Removing Annotations
+### Removing Annotations
 Sometimes you want to remove annotations from a set.
 
 ```java
