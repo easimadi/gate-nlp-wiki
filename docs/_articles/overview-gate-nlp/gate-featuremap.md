@@ -1,6 +1,6 @@
 ---
 title: Gate FeatureMap
-date: 2018-09-20 17:34:00 +0100
+date: 2018-09-20 17:33:00 +0100
 ---
 
 Feature maps extend Map data structure and hold metadata of the annotation. It enables us to attach arbituary key value pairs (metadata) to the annotation.
