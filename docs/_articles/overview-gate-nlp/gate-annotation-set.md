@@ -72,14 +72,14 @@ public AnnotationSet get(String type, Set featureNames);
 Sometimes you want to remove annotations from a set.
 
 ```java
-remove(Object ann);
-removeAll(Collection<?> annAS);
+public void remove(Object ann);
+public boolean removeAll(Collection<?> annAS);
 
 // example
 inputAS.removeAll(annAS);
 ```
 
 
-Reference
-Gate NLP Tutorial
+Reference  
+[Gate NLP Tutorial](https://gate.ac.uk)
 
