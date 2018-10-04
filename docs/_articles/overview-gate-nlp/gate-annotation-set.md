@@ -44,32 +44,30 @@ String type, FeatureMap features)
 
 **Getting Annotations by offsets**
 ```java
-// Get annotations starting from
-public AnnotationSet get(Long offset)
+//Get annotations starting from
+public AnnotationSet get(Long offset);
 
 // Get all annotations that overlap/are between two offsets
-public AnnotationSet get(Long startOffset, Long endOffset)
+public AnnotationSet get(Long startOffset, Long endOffset);
 
 // Get all annotations within an interval.
-public AnnotationSet getContained(Long startOffset, Long endOffset)
+public AnnotationSet getContained(Long startOffset, Long endOffset);
 
 // Get all annotations covering an interval.
-public AnnotationSet getCovering(String neededType, Long startOffset, Long endOffset)
+public AnnotationSet getCovering(String neededType, Long startOffset, Long endOffset);
 
 // COMBINED CONSTRAINTS
 // Get by type and feature constraints.
-public AnnotationSet get(String type, FeatureMap constraints)
+public AnnotationSet get(String type, FeatureMap constraints);
 
 // Get by type, constraints and start position.
-public AnnotationSet get(String type, FeatureMap constraints, Long startOffset)
+public AnnotationSet get(String type, FeatureMap constraints, Long startOffset);
 
 // Get by type, and interval overlap.
-public AnnotationSet get(String type, Long startOffset, Long endOffset)
+public AnnotationSet get(String type, Long startOffset, Long endOffset);
 
 // Get by type and feature presence
-public AnnotationSet get(String type, Set featureNames)
-
-
+public AnnotationSet get(String type, Set featureNames);
 ```
 
 
