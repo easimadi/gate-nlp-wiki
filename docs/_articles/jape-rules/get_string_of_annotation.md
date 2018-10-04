@@ -9,7 +9,7 @@ parmalink: /:path/
 Get the string which an annotations spans. This is useful if the annotation doesn't have a `string` feature and we want to create one.
 
 
-API Signature
+## API Signature 1
 ```java
 Imports: {
         import static gate.Utils.*;
@@ -20,6 +20,8 @@ gate.Utils.stringFor(Document doc, Long startOffset, Long endOffset);
 gate.Utils.stringFor(Document doc, SimpleAnnotation ann);
 ```
 
+## Example
+Extract the string and put it as a feature.
 
 ```java
 
