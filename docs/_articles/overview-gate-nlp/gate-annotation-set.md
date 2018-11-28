@@ -25,16 +25,18 @@ Original markups=
 ```
 
 ## API Signature
-### Access Nodes in the set
+#### Access Nodes in the set
 
 ```java
 // Get the node with the smallest offset.
 public Node firstNode();
 // Get the node with the largest offset.
 public Node lastNode();
+// Get Node with the next in the set relative to `node` provided.
+public Node nextNode(Node node)
 ```
 
-### New Annotations
+#### New Annotations
 ```java
 // Create (and add) a new annotation
 public Integer add(Long startOffset, Long endOffset, String type, FeatureMap features);
@@ -42,7 +44,7 @@ public Integer add(Long startOffset, Long endOffset, String type, FeatureMap fea
 public Integer add(Node start, Node end, String type, FeatureMap features);
 ```
 
-### Getting Annotations by offsets
+#### Getting Annotations by offsets
 ```java
 //Get annotations starting from
 public AnnotationSet get(Long offset);
@@ -68,13 +70,17 @@ public AnnotationSet get(String type, Long startOffset, Long endOffset);
 
 // Get by type and feature presence
 public AnnotationSet get(String type, Set featureNames);
+
+// Get the set of annotation types present in the set.
+Set getAllTypes()
 ```
 
-### Removing Annotations
+#### Removing Annotations
 Sometimes you want to remove annotations from a set.
 
 ```java
 public void remove(Object ann);
+
 public boolean removeAll(Collection<?> annAS);
 
 // example
