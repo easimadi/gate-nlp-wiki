@@ -16,13 +16,25 @@ The GATE `Document` is the document or body of text to be annotated. A collectio
 * features  
 
 ### API Signature.
+#### The Document Name
 ```java
 // Get the name of the Document
-public String getName();
-
+String getName();
+```
+#### Working with the Document Content
+```java
 //get document content
-public DocumentContent getContent();
+DocumentContent getContent();
 
+//set document content. it will overide existing.
+void setContent(DocumentContent newContent);
+
+//you can edit the doument :)
+void edit(Long start, Long end, DocumentContent replacement);
+```
+
+#### Working with Document Annotation Sets
+```java
 // get the Default Annotation set
 public AnnotationSet getAnnotations();  
 
@@ -35,6 +47,8 @@ public Map<String, AnnotationSet> getNamedAnnotationSets();
 // Get the names of the annotation sets
 public Set<String> getAnnotationSetNames();
 
+// Remove Annotation sets
+public void removeAnnotationSet(String name);
 ```
 
 ------
