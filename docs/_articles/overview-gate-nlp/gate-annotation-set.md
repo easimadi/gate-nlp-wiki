@@ -36,11 +36,11 @@ public Node lastNode();
 public Node nextNode(Node node)
 ```
 
-#### New Annotations
+#### New Annotations  
 ```java  
-// Create (and add) a new annotation  
+//Create (and add) a new annotation  
 public Integer add(Long startOffset, Long endOffset, String type, FeatureMap features);
-// Create (and add) a new annotation   
+//Create (and add) a new annotation   
 public Integer add(Node start, Node end, String type, FeatureMap features);
 
 //e.g.
@@ -52,7 +52,7 @@ outputAS.add(start, end, "newAnnotationType", features);
 //Get annotations starting from
 public AnnotationSet get(Long offset);
 
-// Get all annotations that overlap/are between two offsets
+//Get all annotations that overlap/are between two offsets
 public AnnotationSet get(Long startOffset, Long endOffset);
 
 // Get all annotations within an interval.
