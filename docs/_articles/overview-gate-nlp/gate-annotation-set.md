@@ -38,9 +38,9 @@ public Node nextNode(Node node)
 
 #### New Annotations  
 ```java  
-//Create (and add) a new annotation  
+// creating and adding a new annotation to a set  
 public Integer add(Long startOffset, Long endOffset, String type, FeatureMap features);
-//Create (and add) a new annotation   
+//creating and adding a new annotation to a set   
 public Integer add(Node start, Node end, String type, FeatureMap features);
 
 //e.g.
