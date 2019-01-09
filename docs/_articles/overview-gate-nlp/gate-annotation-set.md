@@ -36,8 +36,8 @@ public Node lastNode();
 public Node nextNode(Node node)
 ```
 
-#### New Annotations  
-```java  
+#### New Annotations
+```java
 // creating and adding a new annotation to a set  
 public Integer add(Long startOffset, Long endOffset, String type, FeatureMap features);
 //creating and adding a new annotation to a set   
