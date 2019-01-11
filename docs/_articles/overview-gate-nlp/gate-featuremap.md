@@ -23,5 +23,6 @@ Example
 FeatureMap feature = Factory.newFeatureMap();
 feature.put("Date",new Date());
 feature.put("Rule","myDateRule");
+feature.putAll(FeatureMap featureWithMultipleElements);
 
 ```
