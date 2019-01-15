@@ -38,8 +38,9 @@ public Node nextNode(Node node)
 
 #### New Annotations
 ```java
-// creating and adding a new annotation to a set  
+//creating and adding a new annotation to a set  
 public Integer add(Long startOffset, Long endOffset, String type, FeatureMap features);
+
 //creating and adding a new annotation to a set   
 public Integer add(Node start, Node end, String type, FeatureMap features);
 
@@ -68,8 +69,11 @@ public AnnotationSet get(String type, FeatureMap constraints);
 // Get by type, constraints and start position.
 public AnnotationSet get(String type, FeatureMap constraints, Long startOffset);
 
+
 // Get by type, and interval overlap.
 public AnnotationSet get(String type, Long startOffset, Long endOffset);
+// e.g
+inputAS.get("Tokens", start, end);
 
 // Get by type and feature presence
 public AnnotationSet get(String type, Set featureNames);
