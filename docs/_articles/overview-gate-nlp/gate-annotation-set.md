@@ -82,6 +82,18 @@ public AnnotationSet get(String type, Set featureNames);
 Set getAllTypes()
 ```
 
+#### Get Annotations in Document Order (Sort)
+When you bind to and access annotationSet in the RHS their order is not guaranteed.  
+Here is how to order them.
+
+```java
+  AnnotationSet annSet = tagAnnots;
+  List<Annotation> verbList = gate.Utils.inDocumentOrder(annSet);
+  
+  //access the first annotation
+  verbList.get(0);
+```
+
 #### Removing Annotations
 Sometimes you want to remove annotations from a set.
 
