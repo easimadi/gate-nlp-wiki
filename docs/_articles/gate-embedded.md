@@ -3,7 +3,7 @@ title:  GATE Embedded
 image: "atom.png"
 description: "Programming Gate Applications in production"
 parmalink: /:path/
-date: 2018-09-20 17:25:00 +0100
+date: 2019-11-11 17:25:00 +0100
 ---
 
 <p>In this section we look at common patterns in GATE embedded.<br></p>
