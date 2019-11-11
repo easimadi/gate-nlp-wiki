@@ -68,3 +68,20 @@ doc2
 doc2
 
 ```
+
+## Populate a corpus from (twitter/json) file
+
+```java
+      Plugin twitterPlugin = new Plugin.Maven("uk.ac.gate.plugins","twitter","8.6");
+      Gate.getCreoleRegister().registerPlugin(twitterPlugin);
+
+      Plugin jsonPlugin = new Plugin.Maven("uk.ac.gate.plugins","format-json","8.6");
+      Gate.getCreoleRegister().registerPlugin(jsonPlugin);
+
+      Corpus corpus = Factory.newCorpus("aCorpus");
+      InputStream in = new FileInputStream(new File("/path/to/file.json")); 
+
+      ResourceHelper rh = (ResourceHelper)Gate.getCreoleRegister().getAllInstances("gate.gui.JsonCorpusPopulator").iterator().next();
+
+      rh.call("populate",corpus,in,"text/x-json-twitter","/text");
+```
